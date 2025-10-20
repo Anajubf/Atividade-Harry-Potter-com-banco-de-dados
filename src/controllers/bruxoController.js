@@ -32,7 +32,7 @@ export const listarTodos = async ( req, res ) => {
 
 export const listarUm = async ( req, res ) => {
     try {
-        const { id } = req.params.id;
+        const  id  = req.params.id;
         const bruxo = await BruxoModel.findById(id);
 
         if (!bruxo) {
